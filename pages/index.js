@@ -57,7 +57,7 @@ class Index extends Component{
         
         return(
             <BaseLayout>
-                <h1>This is index page</h1>
+                <h1>This is index page!!!</h1>
                 <h2>{this.state.title}</h2>
                  <h2>{ this.state.title2 }</h2>
                 <button onClick={this.updateTitle}>Change Title</button>
