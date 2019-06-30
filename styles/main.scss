@@ -1,3 +1,5 @@
+@import './index';
+
 @font-face {
     font-family: 'Cairo';
     src: url('/static/fonts/Cairo-Regular.ttf');
@@ -20,5 +22,9 @@
 }
 
 html, body {
+    height:100%;
+    width:100%;
     font-family: 'Cairo', 'Helvetica';
 }
+
+  
