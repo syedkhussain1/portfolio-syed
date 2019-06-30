@@ -13,7 +13,7 @@ class Index extends Component{
         return(
             <BaseLayout>
             <Container>
-            <h1>This is index page!!!</h1>
+              <h1>This is index page!!!</h1>
               <button onClick={this.updateTitle}>Change Title</button>
             </Container>
                 
