@@ -23,11 +23,11 @@
 
 .hero-section {
   perspective: 1000px;
-  color: #b97800;
+  color: #dba919;
   width: 515px;
   position: relative; }
   .hero-section h2 {
-    color: #b97800;
+    color: #dba919;
     font-weight: bold;
     margin-bottom: 10px; }
   .hero-section-content {
@@ -90,6 +90,31 @@
   border: 2px solid #f37d49;
   box-shadow: -17px 13px 41px rgba(13, 78, 158, 0.3); }
 
+.port-navbar.port-default {
+  width: 100%;
+  z-index: 15;
+  padding: 0px; }
+  .port-navbar.port-default .port-navbar-brand {
+    color: #0283b3;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-left: 20px; }
+  .port-navbar.port-default .port-navbar-item {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .port-navbar.port-default .port-navbar-link {
+    color: #0283b3;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    font-size: 18px;
+    text-transform: uppercase; }
+    .port-navbar.port-default .port-navbar-link.active {
+      color: #dba919; }
+    .port-navbar.port-default .port-navbar-link:hover, .port-navbar.port-default .port-navbar-link:focus {
+      color: #dba919; }
+
 @font-face {
   font-family: 'Cairo';
   src: url("/static/fonts/Cairo-Regular.ttf");
@@ -112,6 +137,9 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'Cairo', 'Helvetica'; }
+
+.absolute {
+  position: absolute; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

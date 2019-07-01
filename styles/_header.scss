@@ -3,15 +3,17 @@
   .port-navbar.port-default {
     width: 100%;
     z-index: 15;
-    padding: 5px;
+    padding: 0px;
   
     .port-navbar {
       &-brand {
-        color: black;
+        color: #0283b3;
         font-size: 24px;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-weight: bold;
+        margin-left: 20px;
+        
       }
   
       &-item {
@@ -20,7 +22,7 @@
       }
   
       &-link {
-        color: white;
+        color: #0283b3;
         font-weight: bold;
         letter-spacing: 0.8px;
         font-size: 18px;

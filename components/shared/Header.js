@@ -16,7 +16,7 @@ import {
   const HeaderNavLinks = (props) => {
     return(
         <Link href={ props.route }>
-            <a className="nav-link">{ props.title }</a>
+            <a className="nav-link port-navbar-link">{ props.title }</a>
         </Link>
     )
 }
@@ -39,21 +39,21 @@ export default class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Syed Hussain</NavbarBrand>
+        <Navbar className="port-navbar port-default absolute" color="light" light expand="md">
+          <NavbarBrand className="port-navbar-brand" href="/">Syed Hussain</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              <NavItem className="port-navbar-item">
                 <HeaderNavLinks route="/" title="Home" />
               </NavItem>
-              <NavItem>
+              <NavItem className="port-navbar-item">
                 <HeaderNavLinks route="/portfolio" title="Portfolio" />
               </NavItem>
-              <NavItem>
+              <NavItem className="port-navbar-item">
                 <HeaderNavLinks route="/blogs" title="Blog" />
               </NavItem>
-              <NavItem>
+              <NavItem className="port-navbar-item">
                 <HeaderNavLinks route="/resume" title="Resume" />
               </NavItem>
 
