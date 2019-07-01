@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Container, Row, Col } from  'reactstrap'
 import BaseLayout from '../components/layouts/BaseLayout'
+import Typed from 'react-typed';
 
 
 
@@ -22,7 +23,22 @@ class Index extends Component{
                 <Col md="6" className="hero-welcome-wrapper">
                   <div className="hero-welcome-text">
                     <h1>
-                      Welcome to the portfolio website of Filip Jerga.
+                      Welcome to my site. I am <b>Syed Hussain</b>.
+                      <br/>
+                      <Typed
+                        loop
+                        typeSpeed={50}
+                        backSpeed={50}
+                        strings={["Software Engineer",
+                                  "Web Developer",
+                                  "Project Manager"]}
+                        backDelay={1000}
+                        loopCount={0}
+                        showCursor
+                        cursorChar="|"
+                      />
+                      <br/>
+                      <br/>
                       Get informed, collaborate and discover projects I was working on through the years!
                     </h1>
                   </div>
