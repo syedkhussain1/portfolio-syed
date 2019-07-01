@@ -6,8 +6,8 @@ class Resume extends Component{
     render(){
         return(
             <BaseLayout>
-            <BasePage>
-                <h1>This is resume page</h1>
+            <BasePage title="Resume">
+
             </BasePage>
             </BaseLayout>
         )

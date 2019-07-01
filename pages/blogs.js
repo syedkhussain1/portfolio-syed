@@ -6,8 +6,7 @@ class Blogs extends Component{
     render(){
         return(
             <BaseLayout>
-            <BasePage>
-            <h1>This is blog page</h1>
+            <BasePage title="Blogs">
             </BasePage>
             </BaseLayout>
         )

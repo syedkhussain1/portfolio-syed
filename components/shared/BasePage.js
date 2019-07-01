@@ -4,6 +4,11 @@ const BasePage = (props) => {
     return(
         <div className={`base-page ${props.className || ""}`}>
             <Container>
+                <div className="page-header">
+                    <h1 className="page-header-title">
+                        { props.title }
+                    </h1>
+                </div>
                 {props.children}
             </Container>
         </div>
