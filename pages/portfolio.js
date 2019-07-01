@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from '../routes'
 import BaseLayout from '../components/layouts/BaseLayout'
+import BasePage from '../components/shared/BasePage';
 
 class Portfolio extends Component{
     state = {
@@ -40,10 +41,12 @@ class Portfolio extends Component{
         return(
             
             <BaseLayout>
+            <BasePage>
             <h2>This is portfolio page</h2>
             <ul>
                 {this.renderPosts(this.state.posts)}              
             </ul>
+            </BasePage>
             </BaseLayout>
         )
     }

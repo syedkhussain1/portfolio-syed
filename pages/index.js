@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Container, Row, Col } from  'reactstrap'
-import BaseLayout from '../components/layouts/BaseLayout'
+import React, { Component } from 'react';
+import { Container, Row, Col } from  'reactstrap';
+import BaseLayout from '../components/layouts/BaseLayout';
 import Typed from 'react-typed';
 
 
@@ -42,10 +42,9 @@ class Index extends Component{
                       Get informed, collaborate and discover projects I was working on through the years!
                     </h1>
                   </div>
+                  
                   <div className="hero-welcome-bio">
-                    <h1>
-                      Let's take a look on my work.
-                    </h1>
+
                   </div>
                 </Col>
                 <Col md="6">
