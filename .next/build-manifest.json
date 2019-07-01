@@ -13,11 +13,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/portfolio": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/resume": [
+    "/portfolioNew": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
