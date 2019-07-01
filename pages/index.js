@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from  'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayout';
 import Typed from 'react-typed';
-
+import { FaGithubSquare, FaFacebook } from 'react-icons/fa';
 
 
 class Index extends Component{
@@ -43,9 +43,10 @@ class Index extends Component{
                     </h1>
                   </div>
                   
-                  <div className="hero-welcome-bio">
-
-                  </div>
+                  {/* <div className="" >
+                    <a href="https://github.com/syedkhussain1"><FaGithubSquare value={{ color: "black", size: '5em' }}/></a>
+                    <a href="https://www.facebook.com/kamry01"><FaFacebook /></a>
+                  </div> */}
                 </Col>
                 <Col md="6">
                   <div className="hero-section">

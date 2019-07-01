@@ -50,8 +50,11 @@
   margin-top: 80px; }
 
 .hero-welcome-bio {
+  display: 'inline-block';
+  width: 35;
+  height: 35;
   margin-top: 20px;
-  color: white; }
+  color: #0a0a0a; }
   .hero-welcome-bio .fa-stack {
     font-size: 28px; }
   .hero-welcome-bio .list-inline-item > a {

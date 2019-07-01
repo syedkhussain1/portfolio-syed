@@ -133,104 +133,118 @@ var BaseLayout = function BaseLayout(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! formik */ "formik");
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_1__);
+/////////////Fromik Implementation///////////
+// Render Prop
 
 
 
-var PortfolioAddForm =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(PortfolioAddForm, _React$Component);
+var valiateInputs = function valiateInputs(validate) {
+  var errors = {}; // if (!values.email) {
+  //   errors.email = 'Required';
+  // } else if (
+  //   !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+  // ) {
+  //   errors.email = 'Invalid email address';
+  // }
 
-  function PortfolioAddForm(props) {
-    var _this;
+  return errors;
+};
 
-    _classCallCheck(this, PortfolioAddForm);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(PortfolioAddForm).call(this, props));
-    _this.state = {
+var PortfolioAddForm = function PortfolioAddForm(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Formik"], {
+    initialValues: {
       title: '',
       description: '',
       stack: ''
-    };
-    _this.TitleChangeHandler = _this.TitleChangeHandler.bind(_assertThisInitialized(_this));
-    _this.DescriptionChangeHandler = _this.DescriptionChangeHandler.bind(_assertThisInitialized(_this));
-    _this.StackChangeHandler = _this.StackChangeHandler.bind(_assertThisInitialized(_this));
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
-    return _this;
-  }
+    },
+    validate: valiateInputs,
+    onSubmit: function onSubmit(values, _ref) {
+      var setSubmitting = _ref.setSubmitting;
+      setTimeout(function () {
+        alert(JSON.stringify(values, null, 2));
+        setSubmitting(false);
+      }, 400);
+    }
+  }, function (_ref2) {
+    var isSubmitting = _ref2.isSubmitting;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Form"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("lable", null, "Title: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Field"], {
+      type: "text",
+      name: "title"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["ErrorMessage"], {
+      name: "title",
+      component: "div"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("lable", null, "Description: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Field"], {
+      type: "textarea",
+      name: "description",
+      component: "textarea"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["ErrorMessage"], {
+      name: "description",
+      component: "div"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("lable", null, "Stack used: "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Field"], {
+      type: "text",
+      name: "stack"
+    }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["ErrorMessage"], {
+      name: "stack",
+      component: "div"
+    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      type: "submit",
+      disabled: isSubmitting
+    }, "Add New Portfolio"));
+  }));
+};
 
-  _createClass(PortfolioAddForm, [{
-    key: "TitleChangeHandler",
-    value: function TitleChangeHandler(event) {
-      this.setState({
-        title: event.target.value
-      });
-    }
-  }, {
-    key: "DescriptionChangeHandler",
-    value: function DescriptionChangeHandler(event) {
-      this.setState({
-        description: event.target.value
-      });
-    }
-  }, {
-    key: "StackChangeHandler",
-    value: function StackChangeHandler(event) {
-      this.setState({
-        stack: event.target.value
-      });
-    }
-  }, {
-    key: "handleSubmit",
-    value: function handleSubmit(event) {
-      alert('Title: ' + this.state.title + ' ' + this.state.description + ' ' + this.state.stack);
-      event.preventDefault();
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        onSubmit: this.handleSubmit
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Title :", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        value: this.state.title,
-        onChange: this.TitleChangeHandler
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Description :", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        value: this.state.description,
-        onChange: this.DescriptionChangeHandler
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Programming Stack used :", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "text",
-        value: this.state.stack,
-        onChange: this.StackChangeHandler
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "submit",
-        value: "Submit"
-      }));
-    }
-  }]);
-
-  return PortfolioAddForm;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (PortfolioAddForm);
+/* harmony default export */ __webpack_exports__["default"] = (PortfolioAddForm); /////////////React form way to implement ////////////
+// import React from 'react'
+// class PortfolioAddForm extends React.Component {
+//     constructor(props) {
+//       super(props);
+//       this.state = {
+//           title: '',
+//           description: '',
+//           stack: '',
+//         };
+//       this.TitleChangeHandler = this.TitleChangeHandler.bind(this);
+//       this.DescriptionChangeHandler = this.DescriptionChangeHandler.bind(this);
+//       this.StackChangeHandler = this.StackChangeHandler.bind(this);
+//       this.handleSubmit = this.handleSubmit.bind(this);
+//     }
+//     TitleChangeHandler(event) {
+//       this.setState({title: event.target.value});
+//     }
+//     DescriptionChangeHandler(event) {
+//         this.setState({description: event.target.value});
+//       }
+//     StackChangeHandler(event) {
+//       this.setState({stack: event.target.value});
+//     }
+//     handleSubmit(event) {
+//       alert('Title: ' + this.state.title + ' ' + this.state.description + ' ' + this.state.stack);
+//       event.preventDefault();
+//     }
+//     render() {
+//       return (
+//         <form onSubmit={this.handleSubmit}>
+//           <label>
+//             Title :
+//             <input type="text" value={this.state.title} onChange={this.TitleChangeHandler} />
+//           </label>
+//           <label>
+//             Description :
+//             <input type="text" value={this.state.description} onChange={this.DescriptionChangeHandler} />
+//           </label>
+//           <label>
+//           Programming Stack used :
+//           <input type="text" value={this.state.stack} onChange={this.StackChangeHandler} />
+//         </label>
+//         <br/>
+//           <input type="submit" value="Submit" />
+//         </form>
+//       );
+//     }
+//   }
+//   export default PortfolioAddForm;
 
 /***/ }),
 
@@ -459,6 +473,17 @@ function (_Component) {
 
 module.exports = __webpack_require__(/*! ./pages/portfolioNew.js */"./pages/portfolioNew.js");
 
+
+/***/ }),
+
+/***/ "formik":
+/*!*************************!*\
+  !*** external "formik" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("formik");
 
 /***/ }),
 
