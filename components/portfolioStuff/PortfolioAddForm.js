@@ -2,56 +2,59 @@
 // Render Prop
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Button, FormGroup, Label } from 'reactstrap';
 
-const valiateInputs = (validate) => {
-    let errors = {};
-        // if (!values.email) {
-        //   errors.email = 'Required';
-        // } else if (
-        //   !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-        // ) {
-        //   errors.email = 'Invalid email address';
-        // }
-        return errors;
-}
+// const valiateInputs = (values) => {
+//     let errors = {};
+
+    
+//     if (!values.title) {
+//       errors.title = 'Required';
+//     } 
+//     return errors;
+// }
 
 const PortfolioAddForm = (props) => (
   <div>
     <Formik
       initialValues={{ title: '',
                      description: '',
-                     stack: '' 
+                     stack: '',
+                     url: ''
                     }}
 
-      validate={valiateInputs}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }}
+    //   validate={valiateInputs}
+      onSubmit={props.onSubmit}
     >
       {({ isSubmitting }) => (
         <Form>
-            <div>
-                <lable>Title: </lable>
-                <Field type="text" name="title" />
+            <FormGroup>
+                <Label>Title: </Label>
+                <Field className="form-control" type="text" name="title" />
                 <ErrorMessage name="title" component="div" />
-            </div>
-            <div>
-                <lable>Description: </lable>
-                <Field type="textarea" name="description" component="textarea"/>
-                <ErrorMessage name="description" component="div" />
-            </div>
-            <div>
-                <lable>Stack used: </lable>
-                <Field type="text" name="stack" />
-                <ErrorMessage name="stack" component="div" />
-            </div>
+            </FormGroup>
 
-          <button type="submit" disabled={isSubmitting}>
+            <FormGroup>
+                <Label>Description: </Label>
+                <Field className="form-control" type="textarea" name="description" component="textarea"/>
+                <ErrorMessage name="description" component="div" />
+            </FormGroup>
+
+            <FormGroup>
+                <Label>Stack used: </Label>
+                <Field className="form-control" type="text" name="stack" />
+                <ErrorMessage name="stack" component="div" />
+            </FormGroup>
+
+            <FormGroup>
+                <Label>URL: </Label>
+                <Field className="form-control" type="text" name="url" />
+                <ErrorMessage name="url" component="div" />
+            </FormGroup>
+
+          <Button color="info" type="submit" disabled={isSubmitting}>
             Add New Portfolio
-          </button>
+          </Button>
         </Form>
       )}
     </Formik>

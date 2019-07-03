@@ -4,8 +4,35 @@ import BaseLayout from '../components/layouts/BaseLayout';
 import Typed from 'react-typed';
 import { FaGithubSquare, FaFacebook } from 'react-icons/fa';
 
+// const mongoose = require('mongoose');
+// mongoose.connect('mongodb+srv://admin:admin@cluster0-5foep.mongodb.net/test?retryWrites=true&w=majority'
+//                 , { useNewURLParser:true })
+//   .then(() => console.log('Database connected'))
+//   .catch(err => console.error(err)
+// )
 
 class Index extends Component{
+    state = {
+      isFlipping: false,
+    }
+
+    cardAnimation() {
+      setInterval(() =>{
+        this.setState({
+        isFlipping: !(this.state.isFlipping)
+        })
+      }, 10000)
+
+    }
+
+    //Creating this so card animation gets mounted
+    componentDidMount() {
+      this.cardAnimation();
+    }
+
+    componentWillLeave() {
+      this.setInterval && clearInterval(this.setInterval);
+    }
 
 
     render(){
@@ -50,12 +77,24 @@ class Index extends Component{
                 </Col>
                 <Col md="6">
                   <div className="hero-section">
-                    <div className={`flipper`}>
+                    <div className={`flipper ${this.state.isFlipping ? 'isFlipping' : ''}`}>
+                      <div className="front">
+                        <div className="hero-section-content">
+                          <h2> Software Engineer </h2>
+                          <div className="hero-section-content-intro">
+                            Take a look around my website.
+                          </div>
+                        </div>
+                        <img className="image" src="/static/images/section-1.png"/>
+                        <div className="shadow-custom">
+                          <div className="shadow-inner"> </div>
+                        </div>
+                      </div>
                       <div className="back">
                         <div className="hero-section-content">
-                          <h2> Full Stack Web Developer </h2>
+                          <h2> Web Developer </h2>
                           <div className="hero-section-content-intro">
-                            Have a look at my portfolio and job history.
+                            Experienced React.js and Django developer.
                           </div>
                         </div>
                         <img className="image" src="/static/images/section-1.png"/>
