@@ -105,17 +105,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _shared_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Header */ "./components/shared/Header.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+
 
 
 
 var BaseLayout = function BaseLayout(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Syed Hussain"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    src: "https://kit.fontawesome.com/4759c905fd.js"
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "layout-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
     className: "cover ".concat(props.className)
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "wrapper"
-  }, props.children)));
+  }, props.children))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (BaseLayout);
@@ -350,20 +355,7 @@ function (_Component) {
         applicationDesc: 'Some Desc',
         stack: 'Built in Python | Java Script',
         url: 'https://google.com'
-      }] // componentDidMount() {
-      //     fetch(
-      //       "https://jsonplaceholder.typicode.com/posts"
-      //     )
-      //       .then(response => response.json())
-      //       .then(data => {
-      //         console.log(data)
-      //         this.setState({
-      //           posts: data.splice(0, 10)
-      //         });
-      //       });
-      //   }
-      // function to render post
-
+      }]
     });
 
     return _this;
@@ -371,7 +363,7 @@ function (_Component) {
 
   _createClass(Portfolio, [{
     key: "renderPosts",
-    value: function renderPosts(posts) {
+    value: function renderPosts() {
       return this.state.portfolios.map(function (portfolio, index) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
           md: "4"
@@ -400,7 +392,7 @@ function (_Component) {
       console.log(this.state.posts);
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_3__["default"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_shared_BasePage__WEBPACK_IMPORTED_MODULE_4__["default"], {
         className: "portfolio-page",
-        title: "Portfolios"
+        title: "Check out my portfolio"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], null, this.renderPosts(this.state.posts))));
     }
   }]);
@@ -445,6 +437,17 @@ module.exports = __webpack_require__(/*! ./pages/portfolio.js */"./pages/portfol
 /***/ (function(module, exports) {
 
 module.exports = require("next-routes");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 

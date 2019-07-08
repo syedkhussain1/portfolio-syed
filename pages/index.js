@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from  'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayout';
 import Typed from 'react-typed';
-import { FaGithubSquare, FaFacebook } from 'react-icons/fa';
 
 // const mongoose = require('mongoose');
 // mongoose.connect('mongodb+srv://admin:admin@cluster0-5foep.mongodb.net/test?retryWrites=true&w=majority'
@@ -21,7 +20,7 @@ class Index extends Component{
         this.setState({
         isFlipping: !(this.state.isFlipping)
         })
-      }, 10000)
+      }, 5000)
 
     }
 
@@ -50,7 +49,9 @@ class Index extends Component{
                 <Col md="6" className="hero-welcome-wrapper">
                   <div className="hero-welcome-text">
                     <h1>
-                      Welcome to my site. I am <b>Syed Hussain</b>.
+                      Hello! Welcome to my site.
+                      <br/>
+                      <b>I am Syed Hussain</b>.
                       <br/>
                       <Typed
                         loop
@@ -66,14 +67,47 @@ class Index extends Component{
                       />
                       <br/>
                       <br/>
-                      Get informed, collaborate and discover projects I was working on through the years!
+                      Get informed, collaborate and discover projects I was worked on through out the years!
                     </h1>
                   </div>
-                  
-                  {/* <div className="" >
-                    <a href="https://github.com/syedkhussain1"><FaGithubSquare value={{ color: "black", size: '5em' }}/></a>
-                    <a href="https://www.facebook.com/kamry01"><FaFacebook /></a>
-                  </div> */}
+                  <div className="col-lg-8 col-md-10 mx-auto">
+                            <ul className="list-inline text-center">
+                            <li className="list-inline-item">
+                                <a href="https://www.linkedin.com/in/syedkhussain1/">
+                                <span className="fa-stack fa-lg">
+                                    <i className="fas fa-circle fa-stack-2x"></i>
+                                    <i className="fab fa-linkedin fa-lg fa-stack-1x fa-inverse"></i>
+
+                                </span>
+                                </a>
+                            </li>
+                            <li className="list-inline-item">
+                                <a href="https://github.com/syedkhussain1">
+                                <span className="fa-stack fa-lg">
+                                    <i className="fas fa-circle fa-stack-2x"></i>
+                                    <i className="fab fa-github fa-lg fa-stack-1x fa-inverse"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li className="list-inline-item">
+                                <a href="https://stackoverflow.com/users/5411179/syed-hussain?tab=profile">
+                                <span className="fa-stack fa-lg">
+                                    <i className="fas fa-circle fa-stack-2x"></i>
+                                    <i className="fab fa-stack-overflow fa-lg fa-stack-1x fa-inverse"></i>
+                                </span>
+                                </a>
+                            </li>
+                            <li className="list-inline-item">
+                                <a href="https://www.facebook.com/kamry01">
+                                <span className="fa-stack fa-lg">
+                                    <i className="fas fa-circle fa-stack-2x"></i>
+                                    <i className="fab fa-facebook-f fa-lg fa-stack-1x fa-inverse"></i>
+                                </span>
+                                </a>
+                            </li>
+                            
+                            </ul>
+                  </div>
                 </Col>
                 <Col md="6">
                   <div className="hero-section">
@@ -107,8 +141,10 @@ class Index extends Component{
                 </Col>
               </Row>
             </Container>
+            <h1>Reach</h1>
           </div>
         </BaseLayout>
+      
         )
     }
 }

@@ -29,21 +29,7 @@ class Portfolio extends Component{
         ]
     }
 
-    // componentDidMount() {
-    //     fetch(
-    //       "https://jsonplaceholder.typicode.com/posts"
-    //     )
-    //       .then(response => response.json())
-    //       .then(data => {
-    //         console.log(data)
-    
-    //         this.setState({
-    //           posts: data.splice(0, 10)
-    //         });
-    //       });
-    //   }
-      // function to render post
-      renderPosts(posts) {
+      renderPosts() {
           return (
             this.state.portfolios.map((portfolio, index) => {
               return (
@@ -75,7 +61,7 @@ class Portfolio extends Component{
         return(
             
             <BaseLayout>
-            <BasePage className="portfolio-page" title="Portfolios">
+            <BasePage className="portfolio-page" title="Check out my portfolio">
             <Row>
                 {this.renderPosts(this.state.posts)}              
             </Row>

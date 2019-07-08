@@ -1,6 +1,7 @@
 @import './index';
 @import './header';
 @import './portfolios';
+@import './blogs';
 
 @font-face {
     font-family: 'Cairo';
@@ -42,7 +43,7 @@ html, body {
     .page-header {
       .page-header-title {
         font-weight: 700;
-        color: black;
+        color: rgb(255, 255, 255);
         display: inline-block;
         margin-bottom: 20px;
       }
