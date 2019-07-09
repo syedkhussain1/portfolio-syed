@@ -24421,7 +24421,7 @@ function (_Component) {
         className: "shadow-custom"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "shadow-inner"
-      }, " ")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Reach")));
+      }, " "))))))))));
     }
   }]);
 
@@ -24451,7 +24451,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 7:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -24476,5 +24476,5 @@ module.exports = dll_114c37924188cb7dc18b;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js"]]]));;
+},[[5,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

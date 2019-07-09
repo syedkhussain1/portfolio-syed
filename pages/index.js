@@ -105,8 +105,7 @@ class Index extends Component{
                                 </span>
                                 </a>
                             </li>
-                            
-                            </ul>
+                          </ul>
                   </div>
                 </Col>
                 <Col md="6">
@@ -141,7 +140,6 @@ class Index extends Component{
                 </Col>
               </Row>
             </Container>
-            <h1>Reach</h1>
           </div>
         </BaseLayout>
       
