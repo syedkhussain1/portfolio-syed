@@ -17,7 +17,7 @@ class Portfolio extends Component{
           },
           {
             applicationName: 'AaayMdb',
-            applicationDesc: 'App pull movies from OMDB API and lets you make a custom movies list.',
+            applicationDesc: 'App pulls movies from OMDB API and lets you make a custom movies list.',
             stack: 'Built in React.js | Python server | MongoDB',
             src: '../static/images/AaayMDB.png',
             url: 'https://protected-retreat-68530.herokuapp.com/'
@@ -66,7 +66,7 @@ class Portfolio extends Component{
           },
           {
             applicationName: 'Rest-Assured Test Automation',
-            applicationDesc: 'Rest-Assured Test Automation framework built for testing rest Api.',
+            applicationDesc: 'Rest-Assured Test Automation framework built for testing rest json & xml Api.',
             stack: 'Built in Java | Maven | Testng',
             src: '../static/images/ra_logo.jpeg',
             url: 'https://github.com/syedkhussain1/Java_RestAssured_Automation_ForXML'

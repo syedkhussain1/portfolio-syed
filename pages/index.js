@@ -60,7 +60,9 @@ class Index extends Component{
                         strings={["Software engineer",
                                   "Web developer",
                                   "Project lead",
-                                  "Soon to be parisian",
+                                  "Test automation developer",
+                                  "Traveller",
+                                  "Soon to be a parisian",
                                   "Over all cool dude!!"]}
                         backDelay={1000}
                         loopCount={0}
@@ -70,6 +72,8 @@ class Index extends Component{
                       <br/>
                       <br/>
                       Get informed, collaborate and discover projects I was worked on through out the years!
+                      <br/>
+                      Feel free to reach out, I would love to connect with you.
                     </h1>
                   </div>
                   <div className="col-lg-8 col-md-10 mx-auto">
