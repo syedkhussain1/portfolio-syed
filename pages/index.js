@@ -71,7 +71,7 @@ class Index extends Component{
                       />
                       <br/>
                       <br/>
-                      Get informed, collaborate and discover projects I was worked on through out the years!
+                      Get informed, collaborate and discover projects I had worked on through out the years!
                       <br/>
                       Feel free to reach out, I would love to connect with you.
                     </h1>

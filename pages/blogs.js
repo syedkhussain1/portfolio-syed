@@ -12,16 +12,19 @@ class Blogs extends Component{
         super(props);
         this.state = {
           modal: false,
-          backdrop: false
+          backdrop: false,
+          currentDesc: null,
+          title : null
         };
     
-        this.toggle = this.toggle.bind(this);
+        // this.toggle = this.toggle.bind(this);
       }
 
-    toggle = (id) => {
-
+    toggle = ({fullDesc, title}) => {
       this.setState(prevState => ({
-        modal: !prevState.modal
+        modal: !prevState.modal,
+        currentDesc: fullDesc,
+        title
       }));
     }
 
@@ -58,32 +61,38 @@ class Blogs extends Component{
                                                 <h5 className="post-subtitle">
                                                     { blog.desc }
                                                 </h5>
-                                                <Button outline color="info" onClick={() => this.toggle(blog.id)}>Read More...</Button>
+                                                <Button outline color="info" onClick={() => this.toggle(blog)}>Read More...</Button>
                                             <p className="post-meta">
                                                 Posted by { blog.postedBy } { moment().format('LLLL') }
                                             </p>
                                            
-                                            <div>
+                                            {/* <div>
                                             <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
                                               <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
                                               <ModalBody>
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                { blog.fullDesc }
                                               </ModalBody>
                                               <ModalFooter>
                                                 <Button color="secondary" onClick={this.toggle}>Cancel</Button>
                                               </ModalFooter>
                                             </Modal>
-                                            
-                                            </div>
+                                            </div> */}
                                             <hr></hr>
                                         </div>
 
                                     )
                                 })
                             }
-                        
-
                         </React.Fragment>
+                        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
+                          <ModalHeader toggle={this.toggle}>{ this.state.title }</ModalHeader>
+                          <ModalBody>
+                            { this.state.currentDesc }
+                          </ModalBody>
+                          <ModalFooter>
+                            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+                          </ModalFooter>
+                        </Modal>
                     </Col>
                     </Row>
                     <footer>
