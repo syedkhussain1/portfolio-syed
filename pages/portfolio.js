@@ -9,6 +9,13 @@ class Portfolio extends Component{
     state = {
         portfolios: [
           {
+            applicationName: 'My Portfolio',
+            applicationDesc: 'Here you can find most of the projects I have worked on in the past.',
+            stack: 'Built in React | Next.js | JavaScript | SEO optimization',
+            src: '../static/images/profile.png',
+            url: ''
+          },
+          {
             applicationName: 'AaayMdb',
             applicationDesc: 'App pull movies from OMDB API and lets you make a custom movies list.',
             stack: 'Built in React.js | Python server | MongoDB',
@@ -129,7 +136,7 @@ class Portfolio extends Component{
         console.log(this.state.posts)
         return(
             
-            <BaseLayout>
+            <BaseLayout title="Syed Hussain - Check Out My Portfolio">
             <BasePage className="portfolio-page" title="Check out my portfolio">
             <Row>
                 {this.renderPosts(this.state.posts)}              

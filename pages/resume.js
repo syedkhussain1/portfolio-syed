@@ -25,7 +25,7 @@ const items = [
 class Resume extends Component{
     render(){
         return(
-            <BaseLayout>
+            <BaseLayout title="Syed Hussain - Find My Resume">
                 <BasePage>
                     <Row>
                         <Col md={{size:5, offset:1}}>

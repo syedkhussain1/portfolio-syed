@@ -25,7 +25,7 @@ class PortfolioDetails extends Component{
     render(){
         const portfolioData = this.props.portfolioData;
         return(
-            <BaseLayout>
+            <BaseLayout >
             <BasePage>
                 <p>PROJECT #: { portfolioData.id }</p>
                 <h1>TITLE: { portfolioData.title }</h1>

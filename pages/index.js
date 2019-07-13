@@ -38,7 +38,7 @@ class Index extends Component{
         console.log('render')
         
         return(
-          <BaseLayout className="cover">
+          <BaseLayout title="Syed Hussain - Personal Profile | Connect With Me" className="cover">
           <div className="main-section">
             <div className="background-image">
               <img src="/static/images/background-img.png" />
@@ -57,9 +57,11 @@ class Index extends Component{
                         loop
                         typeSpeed={50}
                         backSpeed={50}
-                        strings={["Software Engineer",
-                                  "Web Developer",
-                                  "Project Manager"]}
+                        strings={["Software engineer",
+                                  "Web developer",
+                                  "Project lead",
+                                  "Soon to be parisian",
+                                  "Over all cool dude!!"]}
                         backDelay={1000}
                         loopCount={0}
                         showCursor

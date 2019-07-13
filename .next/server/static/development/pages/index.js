@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -107,12 +107,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../shared/Header */ "./components/shared/Header.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_dist_lib_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/dist/lib/link */ "next/dist/lib/link");
+/* harmony import */ var next_dist_lib_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dist_lib_link__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
 
 var BaseLayout = function BaseLayout(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, "Syed Hussain"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", null, props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "description",
+    content: "My name is Syed Hussain and I am an experienced software engineer and web developer. I have several years of experience working in very challenging and wide range  of technologies from software development, SQL development, developing test automation for web apps/API , android developer and  web applications development in React and django. Throughout my career, I have acquired advanced technical knowledge and challenged  myself to deliver solid products for client and in-house development. Please take a look around my website and connect with me."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    name: "keyword",
+    content: "syed hussain, syed portfolio, syed software developer, syed profile"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:title",
+    content: "Syed Hussain - developer, programmer, traveller"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:locale",
+    content: "en_EU"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:url",
+    content: "http://localhost:3000"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:type",
+    content: "website"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+    property: "og:description",
+    content: "My name is Syed Hussain and I am an experienced software engineer and web developer."
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "icon",
+    type: "image/ico",
+    href: "/static/favicon.ico"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
     src: "https://kit.fontawesome.com/4759c905fd.js"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "layout-container"
@@ -346,6 +374,7 @@ function (_Component) {
     value: function render() {
       console.log('render');
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        title: "Syed Hussain - Personal Profile | Connect With Me",
         className: "cover"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "main-section"
@@ -362,7 +391,7 @@ function (_Component) {
         loop: true,
         typeSpeed: 50,
         backSpeed: 50,
-        strings: ["Software Engineer", "Web Developer", "Project Manager"],
+        strings: ["Software engineer", "Web developer", "Project lead", "Soon to be parisian", "Over all cool dude!!"],
         backDelay: 1000,
         loopCount: 0,
         showCursor: true,
@@ -454,7 +483,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -463,6 +492,17 @@ function (_Component) {
 
 module.exports = __webpack_require__(/*! ./pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "next/dist/lib/link":
+/*!*************************************!*\
+  !*** external "next/dist/lib/link" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/dist/lib/link");
 
 /***/ }),
 

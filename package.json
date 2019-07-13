@@ -44,6 +44,7 @@
     "react-dom": "^16.8.6",
     "react-emotion": "^9.2.12",
     "react-icons": "^3.7.0",
+    "react-router-dom": "^5.0.1",
     "react-toastify": "^4.4.3",
     "react-typed": "^1.1.2",
     "reactstrap": "^6.5.0",
