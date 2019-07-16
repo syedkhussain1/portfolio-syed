@@ -1,6 +1,7 @@
-const PORT = process.env.PORT || 3000;
+const prod = process.env.NODE_ENV === 'production';
 
-server.use(handle).listen(PORT, err => {
-	if (err) throw err;
-	console.log('> Ready on http://localhost:3000');
-});
+module.export = {
+    'process.env.BASE_URL': prod ? 'https://portfolio-syed.herokuapp.com' : 'http://localhost:3000',
+    'process.env.NAMESPACE': 'https://portfolio-syed.herokuapp.com',
+    
+}
