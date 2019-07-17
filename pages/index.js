@@ -71,9 +71,11 @@ class Index extends Component{
                       />
                       <br/>
                       <br/>
-                      Get informed, collaborate and discover projects I have worked on through out the years!
+                      Discover projects I have worked on in the past few years!
                       <br/>
-                      Feel free to reach out, I would love to connect with you.
+                      Feel free to email me for more information or collaboration, happy to connect:
+                      <br/>
+                      syedkhussain1@outlook.com
                     </h1>
                   </div>
                   <div className="col-lg-8 col-md-10 mx-auto">
