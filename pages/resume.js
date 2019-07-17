@@ -48,7 +48,7 @@ class Resume extends Component{
                     </Row>
                     <Row>
                         <Col md={{size:10, offset:1}}>
-                            <iframe style={{ width:'100%', height:'600px' }} src="/static/Syed_Hussain_SWE_resume_2019.pdf">
+                            <iframe style={{ width:'100%', height:'600px' }} src="/static/Syed.Hussain_SWE_resume_2019.pdf">
                             </iframe>
                         </Col>
                     </Row>
