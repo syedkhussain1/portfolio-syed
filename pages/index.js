@@ -77,6 +77,7 @@ class Index extends Component{
                       <br/>
                       syedkhussain1@outlook.com
                     </h1>
+                    <br/>
                   </div>
                   <div className="col-lg-8 col-md-10 mx-auto">
                             <ul className="list-inline text-center">
@@ -105,14 +106,14 @@ class Index extends Component{
                                 </span>
                                 </a>
                             </li>
-                            <li className="list-inline-item">
+                            {/* <li className="list-inline-item">
                                 <a href="https://www.facebook.com/kamry01">
                                 <span className="fa-stack fa-lg">
                                     <i className="fas fa-circle fa-stack-2x"></i>
                                     <i className="fab fa-facebook-f fa-lg fa-stack-1x fa-inverse"></i>
                                 </span>
                                 </a>
-                            </li>
+                            </li> */}
                           </ul>
                   </div>
                 </Col>
