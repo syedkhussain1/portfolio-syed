@@ -73,7 +73,9 @@ class Index extends Component{
                       <br/>
                       Discover projects I have worked on in the past few years!
                       <br/>
-                      Feel free to email me for more information or collaboration, happy to connect:
+                      Feel free to email me for more information or collaboration.
+                      <br/>
+                      I am happy to connect:
                       <br/>
                       syedkhussain1@outlook.com
                     </h1>
